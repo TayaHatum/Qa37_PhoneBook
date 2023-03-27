@@ -20,13 +20,6 @@ public class LoginTests extends TestBase {
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("noa@gmail.com", "Nnoa12345$");
         app.getHelperUser().submitLogin();
-        // time ---> signOut
-
-        //Assert  is SignOup present?
-        // Assert.assertEquals(,);
-        // Assert.assertNotEquals();
-        // Assert.assertFalse();
-
         Assert.assertTrue(app.getHelperUser().isLogged());
 
     }
