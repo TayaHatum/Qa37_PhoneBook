@@ -55,9 +55,6 @@ public class LoginTests extends TestBase {
         app.getHelperUser().fillLoginRegistrationForm("pop@gmail.com", "Pop12345$");
         app.getHelperUser().submitLogin();
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
-        Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
-
-
-        // for test
+  
     }
 }
