@@ -26,6 +26,7 @@ public class HelperContact extends HelperBase{
     }
 
     public void saveContact() {
+        getScreenElement("src/test/screenshots/screen-btn.png",By.cssSelector(".add_form__2rsm2>button"));
         click(By.cssSelector(".add_form__2rsm2>button"));
 
     }

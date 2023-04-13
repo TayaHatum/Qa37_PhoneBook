@@ -17,10 +17,12 @@ public class LoginTests extends TestBase {
 
     @Test
     public void loginSuccess() {
+        logger.info("Start");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("noa@gmail.com", "Nnoa12345$");
         app.getHelperUser().submitLogin();
         Assert.assertTrue(app.getHelperUser().isLogged());
+        logger.info("End");
 
     }
 

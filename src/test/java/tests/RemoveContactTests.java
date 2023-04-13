@@ -12,7 +12,7 @@ public class RemoveContactTests extends TestBase{
         if (!app.getHelperUser().isLogged()) {
             app.getHelperUser().login(new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$"));
         }
-        app.helperContact().provideContacts(); /// if list <3 ===> add 3 contacts
+       // app.helperContact().provideContacts(); /// if list <3 ===> add 3 contacts
 
     }
 
