@@ -1,15 +1,18 @@
 package manager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.WebDriverListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.List;
+import java.util.Random;
 
 public class ListenerWD implements WebDriverListener {
     Logger logger = LoggerFactory.getLogger(ListenerWD.class);
@@ -20,14 +23,25 @@ public class ListenerWD implements WebDriverListener {
         logger.info("Huston we have a problem!");
         logger.info("Object target  --->" +target.toString());
         logger.info("*************");
-        logger.info(method.getName());
+        logger.info("Method name --->" + method.getName());
         logger.info("*************");
-        logger.info("InvocationTargetException1" +e.toString());
+        //logger.info("InvocationTargetException1" +e.toString());
         logger.info("*************");
-        logger.info("InvocationTargetException2" +e.getMessage());
+       // logger.info("InvocationTargetException2" +e.getMessage());
         logger.info("*************");
-        logger.info("InvocationTargetException3" +e.fillInStackTrace());
+        logger.info("InvocationTargetException & getTargetException -->" +e.getTargetException());
         logger.info("*************");
+        int i = new Random().nextInt(1000)+1000;
+        String link = "src/test/screenshots/screen_"+i+".png";
+        logger.info("Screen with error  is --->"+link);
+        WebDriver wd =(ChromeDriver)target;
+        TakesScreenshot takesScreenshot=(TakesScreenshot) wd;
+        File tmp =takesScreenshot.getScreenshotAs(OutputType.FILE);
+        try {
+            Files.copy(tmp,new File(link));
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
     }
 
     @Override

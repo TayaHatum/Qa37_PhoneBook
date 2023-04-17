@@ -1,0 +1,31 @@
+19:52:38.652  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+19:52:40.791  INFO  manager.ApplicationManager - The link --->https://telranedu.web.app/home
+19:52:40.868  INFO  tests.TestBase - Name of method -->loginSuccessModel
+19:52:40.871  INFO  manager.ListenerWD - Before Find ElementS --->By.xpath: //button[text()='Sign Out']
+19:52:45.931  INFO  manager.ListenerWD - After Find ElementS --->By.xpath: //button[text()='Sign Out']
+19:52:45.931  INFO  manager.ListenerWD - list of elements is -->0
+19:52:45.933  INFO  tests.TestBase - Test data ---> email: 'noa@gmail.com' & password : 'Nnoa12345$'
+19:52:45.935  INFO  manager.ListenerWD - Before Find Element --->By.cssSelector: a[href='/login']
+19:52:45.986  INFO  manager.ListenerWD - After Find Element --->By.cssSelector: a[href='/login']
+19:52:46.003  INFO  manager.ListenerWD - Location of element (1330, 36)
+19:52:46.113  INFO  manager.ListenerWD - Before Find Element --->By.name: email
+19:52:46.183  INFO  manager.ListenerWD - After Find Element --->By.name: email
+19:52:46.209  INFO  manager.ListenerWD - Location of element (520, 250)
+19:52:46.769  INFO  manager.ListenerWD - Before Find Element --->By.xpath: //input[la]
+19:52:51.794  INFO  manager.ListenerWD - Huston we have a problem!
+19:52:51.794  INFO  manager.ListenerWD - Object target  --->ChromeDriver: chrome on MAC (65ee405ec3933e0f5361a0a95093276d)
+19:52:51.794  INFO  manager.ListenerWD - *************
+19:52:51.795  INFO  manager.ListenerWD - Method name --->findElement
+19:52:51.795  INFO  manager.ListenerWD - *************
+19:52:51.795  INFO  manager.ListenerWD - *************
+19:52:51.795  INFO  manager.ListenerWD - *************
+19:52:51.798  INFO  manager.ListenerWD - InvocationTargetException & getTargetExceptionorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[la]"}
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65ee405ec3933e0f5361a0a95093276d, findElement {using=xpath, value=//input[la]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/s_/hl4vhy0959g...}, goog:chromeOptions: {debuggerAddress: localhost:53311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53311/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 65ee405ec3933e0f5361a0a95093276d
+19:52:51.798  INFO  manager.ListenerWD - *************
