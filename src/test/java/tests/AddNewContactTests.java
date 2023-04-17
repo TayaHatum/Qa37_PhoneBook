@@ -29,6 +29,7 @@ public class AddNewContactTests extends TestBase{
                 .email("stark"+i+"@gmail.com")
                 .description("all fields")
                 .build();
+        logger.info("Tests run with data: --->"+contact.toString());
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
         app.helperContact().saveContact();
@@ -47,6 +48,7 @@ public class AddNewContactTests extends TestBase{
                 .phone("34343434"+i)
                 .email("stark"+i+"@gmail.com")
                 .build();
+        logger.info("Tests run with data: --->"+contact.toString());
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
         app.helperContact().saveContact();
@@ -64,6 +66,7 @@ public class AddNewContactTests extends TestBase{
                 .email("stark@gmail.com")
                 .description("empty name")
                 .build();
+        logger.info("Tests run with data: --->"+contact.toString());
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
        // app.helperContact().pause(15000);
@@ -81,6 +84,7 @@ public class AddNewContactTests extends TestBase{
                 .email("stark@gmail.com")
                 .description("empty address")
                 .build();
+        logger.info("Tests run with data: --->"+contact.toString());
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
         app.helperContact().saveContact();
@@ -99,6 +103,7 @@ public class AddNewContactTests extends TestBase{
                 .email("stark@gmail.com")
                 .description("empty last name")
                 .build();
+        logger.info("Tests run with data: --->"+contact.toString());
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
         app.helperContact().getScreen("src/test/screenshots/screen-"+i+".png");
@@ -115,6 +120,7 @@ public class AddNewContactTests extends TestBase{
                 .email("stark@gmail.com")
                 .description("empty phone")
                 .build();
+        logger.info("Tests run with data: --->"+contact.toString());
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
         app.helperContact().saveContact();
@@ -133,6 +139,7 @@ public class AddNewContactTests extends TestBase{
                 .email("starkgmail.com")
                 .description("wrong email")
                 .build();
+        logger.info("Tests run with data: --->"+contact.toString());
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
         app.helperContact().saveContact();

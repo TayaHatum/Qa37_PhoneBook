@@ -21,6 +21,7 @@ public class HelperUser extends HelperBase{
 //
 //        loginTab.click();
         click(By.cssSelector("a[href='/login']"));
+
     }
 
     public void fillLoginRegistrationForm(String email,String password){
@@ -30,11 +31,13 @@ public class HelperUser extends HelperBase{
 //        emailInput.sendKeys(email);
         type(By.name("email"),email);
 
+
 //        WebElement passwordInput= wd.findElement(By.xpath("//input[last()]"));
 //        passwordInput.click();
 //        passwordInput.clear();
 //        passwordInput.sendKeys(password);
-        type(By.xpath("//input[last()]"),password);
+        //type(By.xpath("//input[last()]"),password);
+        type(By.xpath("//input[la]"),password);
 
     }
 

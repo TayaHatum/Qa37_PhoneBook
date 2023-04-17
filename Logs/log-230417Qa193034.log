@@ -1,0 +1,25 @@
+19:30:41.594  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+19:30:43.788  INFO  manager.ApplicationManager - The link --->https://telranedu.web.app/home
+19:30:43.839  INFO  tests.TestBase - Name of method -->loginSuccessModel
+19:30:43.843  INFO  manager.ListenerWD - Before Find ElementS --->By.xpath: //button[text()='Sign Out']
+19:30:48.928  INFO  manager.ListenerWD - After Find ElementS --->By.xpath: //button[text()='Sign Out']
+19:30:48.928  INFO  manager.ListenerWD - list of elements is -->0
+19:30:48.930  INFO  tests.TestBase - Test data ---> email: 'noa@gmail.com' & password : 'Nnoa12345$'
+19:30:48.931  INFO  manager.ListenerWD - Before Find Element --->By.cssSelector: a[href='/login']
+19:30:48.973  INFO  manager.ListenerWD - After Find Element --->By.cssSelector: a[href='/login']
+19:30:48.995  INFO  manager.ListenerWD - Location of element (1330, 36)
+19:30:49.126  INFO  manager.ListenerWD - Before Find Element --->By.name: email
+19:30:49.193  INFO  manager.ListenerWD - After Find Element --->By.name: email
+19:30:49.213  INFO  manager.ListenerWD - Location of element (520, 250)
+19:30:49.771  INFO  manager.ListenerWD - Before Find Element --->By.xpath: //input[la]
+19:30:54.805  INFO  manager.ListenerWD - Huston we have a problem!
+19:30:54.806  INFO  manager.ListenerWD - Object target  --->ChromeDriver: chrome on MAC (5f4aa41e34df7fcbe477e28f666d05d8)
+19:30:54.806  INFO  manager.ListenerWD - *************
+19:30:54.806  INFO  manager.ListenerWD - findElement
+19:30:54.806  INFO  manager.ListenerWD - *************
+19:30:54.807  INFO  manager.ListenerWD - InvocationTargetException1java.lang.reflect.InvocationTargetException
+19:30:54.807  INFO  manager.ListenerWD - *************
+19:30:54.807  INFO  manager.ListenerWD - InvocationTargetException2null
+19:30:54.808  INFO  manager.ListenerWD - *************
+19:30:54.808  INFO  manager.ListenerWD - InvocationTargetException3java.lang.reflect.InvocationTargetException
+19:30:54.810  INFO  manager.ListenerWD - *************

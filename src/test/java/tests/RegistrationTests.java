@@ -22,6 +22,7 @@ public class RegistrationTests extends TestBase{
         Random random = new Random();
         int i = random.nextInt(1000)+1000;
         User user = new User().withEmail("don"+i+"@gmail.com").withPassword("Don12345$");
+        logger.info("Tests run with data: --->"+user.toString());
          app.getHelperUser().openLoginRegistrationForm();
          app.getHelperUser().fillLoginRegistrationForm(user);
          app.getHelperUser().submitRegistration();
@@ -38,6 +39,7 @@ public class RegistrationTests extends TestBase{
     public void registrationWrongEmail(){
 
         User user = new User().withEmail("dongmail.com").withPassword("Don12345$");
+        logger.info("Tests run with data: --->"+user.toString());
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
@@ -56,6 +58,7 @@ public class RegistrationTests extends TestBase{
     public void registrationWrongPassword(){
 
         User user = new User().withEmail("don@gmail.com").withPassword("Don12");
+        logger.info("Tests run with data: --->"+user.toString());
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
@@ -74,6 +77,7 @@ public class RegistrationTests extends TestBase{
     public void registrationNeValidPasswordExistUser(){
 
         User user = new User().withEmail("don@gmail.com").withPassword("Don12");
+        logger.info("Tests run with data: --->"+user.toString());
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
@@ -93,6 +97,7 @@ public class RegistrationTests extends TestBase{
     public void registrationExistsUser(){
 
         User user = new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$");
+        logger.info("Tests run with data: --->"+user.toString());
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
