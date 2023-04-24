@@ -103,16 +103,16 @@ public class AddNewContactTests extends TestBase{
         app.helperContact().saveContact();
         Assert.assertTrue(app.helperContact().isAddPageStillDisplayed());
     }
-    @Test
-    public void addNewContactWrongPhone(){
-        Contact contact = Contact.builder()
-                .name("Tony")
-                .lastName("Stark")
-                .address("NY")
-                .phone("")
-                .email("stark@gmail.com")
-                .description("empty phone")
-                .build();
+    @Test(dataProvider = "contactWrongPhone",dataProviderClass = DataProviderContact.class)
+    public void addNewContactWrongPhone(Contact contact){
+//        Contact contact = Contact.builder()
+//                .name("Tony")
+//                .lastName("Stark")
+//                .address("NY")
+//                .phone("")
+//                .email("stark@gmail.com")
+//                .description("empty phone")
+//                .build();
         logger.info("Tests run with data: --->"+contact.toString());
         app.helperContact().openContactForm();
         app.helperContact().fillContactForm(contact);
