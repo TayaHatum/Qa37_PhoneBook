@@ -24,6 +24,6 @@ Logger logger = LoggerFactory.getLogger(TestBase.class);
    }
 @AfterSuite
    public void tearDown(){
-       //app.stop();
+       app.stop();
    }
 }

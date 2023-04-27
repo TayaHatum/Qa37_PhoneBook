@@ -25,3 +25,10 @@ dependencies {
 test {
     useTestNG()
 }
+
+task qa(type:Test){
+    useTestNG(){
+        suites 'src/test/resources/testng.xml'
+    }
+}
+
