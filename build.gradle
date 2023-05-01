@@ -39,7 +39,17 @@ task scoup(type: Test){
 
 
 
+task team (type:Test){
+    useTestNG(){
+        def groups = System.getProperty('groups')
+        if (groups != null) {
+            includeGroups groups
+        }
+        suites 'src/test/resources/base.xml'
 
+    }
+
+}
 
 
 
