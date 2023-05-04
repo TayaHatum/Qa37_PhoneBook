@@ -14,7 +14,7 @@ public class HelperContact extends HelperBase{
     }
 
     public void openContactForm() {
-        click(By.cssSelector("a[href='/add']"));
+       click(By.cssSelector("a[href='/add']"));
     }
 
     public void fillContactForm(Contact contact) {
