@@ -43,6 +43,7 @@ public class AddNewContactTests extends TestBase{
 
 
     }
+    // for jenkins
     @Test(groups = {"smoke","regress","retest"})
     public void  addContactSuccessRequiredFields(){
         int i= new Random().nextInt(1000)+1000;
